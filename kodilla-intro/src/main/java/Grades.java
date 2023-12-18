@@ -1,6 +1,4 @@
 import java.util.Arrays;
-import java.util.Random;
-import java.util.stream.IntStream;
 
 public class Grades {
     private int[] grade;
@@ -29,6 +27,9 @@ public class Grades {
                 ", size=" + size +
                 '}';
     }
+
+
+
 /*Public static void main (String[]args){
             System.out.println("The values were added");
             Grades g1 = new Grades();
@@ -38,14 +39,32 @@ public class Grades {
                 System.out.println(grade);
 
             }
-
-
         }*/
+
+    public int[] getGrade() {
+        return grade;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public void findIndex9(int value) {
+
+        int searchnumb == this.grade[9];
+        if (int serchnumb != 0;){
+            System.out.println("to jest to " + serchnumb);
+        }
+        else{
+            System.out.println("szukaj dalej");
+        }
+    }
+
 
 }
 
 class App {
-    public static void main(String[] args) {
+    public void main(String[] args) {
         Grades grades = new Grades();
         grades.add(3);
         grades.add(5);
@@ -58,8 +77,21 @@ class App {
         grades.add(2);
         grades.add(4);
         System.out.println(grades);
+        grades.findIndex9();
+
+
+        double sum = 0;
+        for (int n = 0; n < grades.getSize(); n++) {
+            sum += grades[n].getGrades();
+        }
+        double avg = sum / grades.getSize();
+        for (int n = 0; n < grades.getSize(); n++) {
+            if(grades[n].getGrades()>avg){
+                System.out.println(grades[n]);
+            }
+
 
     }
-
-
 }
+
+
