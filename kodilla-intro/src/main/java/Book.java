@@ -9,7 +9,7 @@ public class Book {
         Book book = new Book();
         String book = Book.of("Isaac Asimov", "The Galaxy");
         return Book.of();
-    }git
+    }
 
     public static void main(String[] args) {
         String Book = Book.of();
