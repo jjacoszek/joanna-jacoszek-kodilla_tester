@@ -52,7 +52,7 @@ public class Grades {
     public void findIndex9(int value) {
 
         int searchnumb == this.grade[9];
-        if (int serchnumb != 0;){
+        if (int serchnumb != 0){
             System.out.println("to jest to " + serchnumb);
         }
         else{
