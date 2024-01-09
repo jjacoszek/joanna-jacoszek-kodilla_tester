@@ -13,7 +13,7 @@ public class RandomNumbers {
             x = random.nextInt(0, 30);
             suma += x;
             list.add(x);
-            System.out.println("Program losuje " + " git" + suma + " przed sortowaniem wartosc to " + x);
+            System.out.println("Program losuje " + " " + suma + " przed sortowaniem wartosc to " + x);
 
         }
         Collections.sort(list);
