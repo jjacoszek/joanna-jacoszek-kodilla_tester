@@ -1,18 +1,29 @@
+import java.time.LocalDate;
+
 public class Book {
 
     private String author;
     private String title;
 
-    public static String of(String author, String title) {
-
-
-        Book book = new Book();
-        String book = Book.of("Isaac Asimov", "The Galaxy");
-        return Book.of();
+    private Book(String author, String title) {
+        this.author = author;
+        this.title = title;
     }
 
+    public static Book of(String author, String title) {
+        Book book = new Book(author, title);
+        return book;
+    }
+
+    @Override
+    public String toString(){
+        return author+", " + title;
+    }
+}
+class App4{
     public static void main(String[] args) {
-        String Book = Book.of();
-        System.out.println(Book);
+        Book book = Book.of("Isaac Asimov", "The Galaxy");
+        book.toString();
+        System.out.println(book);
     }
 }

@@ -9,8 +9,10 @@ public class Colors {
             char letter = scanner.next().charAt(0);
             return letter;
         }
-        System.out.println("Try again");
+
     }
+
+
 
 
     public static String getColorName() {

@@ -1,4 +1,4 @@
-import java.util.Arrays;
+/*import java.util.Arrays;
 
 public class Grades {
     private int[] grade;
@@ -41,7 +41,7 @@ public class Grades {
             }
         }*/
 
-    public int[] getGrade() {
+   /* public int[] getGrade() {
         return grade;
     }
 
@@ -93,5 +93,5 @@ class App {
 
     }
 }
-
-
+}
+*/

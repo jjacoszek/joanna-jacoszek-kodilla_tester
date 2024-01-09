@@ -1,56 +1,58 @@
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Random;
 
 public class RandomNumbers {
 
-    private int[] randomnumbers;
-    int size;
-
-    public RandomNumbers(int[] randomnumbers, int size) {
-        this.randomnumbers = randomnumbers;
-        this.size = size;
-    }
-
-    public int[] getRandomnumbers() {
-        return randomnumbers;
-    }
-
-    public int getSize() {
-        return size;
-    }
-
-    public void add(int value) {
-        if (this.size == 30) {
-            return;
-
-        }
-        this.randomnumbers[this.size] = value;
-        this.size++;
-
-
-    }
-
     public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        Random random = new Random();
+        int suma = 0;
+        int x = 0;
+        while (suma < 5000) {
+            x = random.nextInt(0, 30);
+            suma += x;
+            list.add(x);
+            System.out.println("Program losuje " + " git" + suma + " przed sortowaniem wartosc to " + x);
 
-        RandomNumbers no = new RandomNumbers();
-        Random generator = new Random();
-
-
-        double sum =0;
-        for(int i=0; i< 5000; i++) {
-            sum += no[i].getRandomnumbers();
         }
-        no.add(generator.nextInt());
-        }
+        Collections.sort(list);
+        System.out.println("Po sortowaniu " + list);
+        System.out.println("Wartosc minimalna to " + list.get(0));
 
+        System.out.println("Rozmiar listy to " + list.size());
+        System.out.println("Wartosc maksymalna to " + list.get(list.size()-1));
 
     }
-
-
-
-
-
-
-
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
