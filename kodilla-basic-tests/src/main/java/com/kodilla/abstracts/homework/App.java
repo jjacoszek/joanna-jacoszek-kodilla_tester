@@ -1,4 +1,4 @@
-package com.kodilla.com.kodilla.abstracts.homework;
+package com.kodilla.abstracts.homework;
 
 public class App {
 
