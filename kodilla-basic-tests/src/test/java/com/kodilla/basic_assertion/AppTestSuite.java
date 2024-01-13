@@ -31,8 +31,7 @@ class AppTestSuite3 {
     void squaringResult(){
         Calculator calculator = new Calculator(4.00, 25.00);
         double squaringResult = calculator.squaring();
-        assertEquals(16.0000 , squaringResult,0, String.valueOf(0001));
-
+        assertEquals(16.0000 , squaringResult, 0.0001);
     }
 
 
