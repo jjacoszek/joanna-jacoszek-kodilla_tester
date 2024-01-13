@@ -2,35 +2,35 @@ package com.kodilla.basic_assertion;
 
 public class Calculator {
 
-    private int a;
-    private int b;
+    private double a;
+    private double b;
 
-    public Calculator(int a, int b){
+    Calculator(double a, double b){
         this.a = a;
         this.b = b;
 
     }
 
-    int sumDisplay(){
-        int x = a + b;
+    double sumDisplay(){
+        double x = a + b;
         return x;
     }
 
-    int substractionDisplay(){
-        int y = b - a;
+    double substractionDisplay(){
+        double y = b - a;
         return y;
     }
 
-    int squaring(){
-        int z = a * a;
+    double squaring(){
+        double z = a * a;
         return z;
     }
 
-    public int getA() {
+    public double getA() {
         return a;
     }
 
-    public int getB() {
+    public double getB() {
         return b;
     }
 }
@@ -39,12 +39,12 @@ class App{
 
     public static void main(String[] args) {
 
-        Calculator calculator = new Calculator(4, 25);
+        Calculator calculator = new Calculator(4.00, 25.00);
         System.out.println(calculator.sumDisplay());
         System.out.println(calculator.substractionDisplay());
         System.out.println(calculator.squaring());
 
-        int sumResult = calculator.sumDisplay();
+       double sumResult = calculator.sumDisplay();
         boolean correct = ResultChecker.assertEquals(29, sumResult);
         if (correct) {
             System.out.println("Metoda sum działa poprawnie dla liczb " + calculator.getA() + " i " + calculator.getB());
@@ -53,7 +53,7 @@ class App{
         }
 
 
-        int substractionResult = calculator.substractionDisplay();
+       double substractionResult = calculator.substractionDisplay();
         boolean correct1 = ResultChecker.assertEquals(21, substractionResult);
         if (correct1) {
             System.out.println("Metoda odejmowania działa poprawnie dla liczb " + calculator.getA() + " i " + calculator.getB());
@@ -61,7 +61,7 @@ class App{
             System.out.println("Metoda odejmowania nie działa poprawnie dla liczb " + calculator.getA() + " i " + calculator.getB());
         }
 
-        int squaringResult = calculator.squaring();
+        double squaringResult = calculator.squaring();
         boolean correct2 = ResultChecker.assertEquals(16, squaringResult);
         if (correct2) {
             System.out.println("Metoda potęgowania działa poprawnie dla liczby " + calculator.getA());
