@@ -6,4 +6,8 @@ public class ResultChecker {
         return expected == actual;
     }
 
+    public static class PrimeChecker {
+
+
+    }
 }
