@@ -11,4 +11,8 @@ public class Main {
     System.out.println(Greeting);
 
 }
+
+    public static class interfaces {
+
+    }
 }

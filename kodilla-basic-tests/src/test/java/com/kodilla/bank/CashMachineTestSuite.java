@@ -1,5 +1,5 @@
 package com.kodilla.bank;
-import homework.CashMachine;
+import homework.bank.CashMachine;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

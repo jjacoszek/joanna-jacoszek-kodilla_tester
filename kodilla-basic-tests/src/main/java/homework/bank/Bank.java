@@ -1,36 +1,27 @@
 package homework.bank;
 
-
-import homework.CashMachine;
-
 public class Bank {
-    private int[] cashMachines;
+    private CashMachine[] cashMachines;
     private int size;
-    private final CashMachine cashMachine2;
 
     public Bank() {
         this.size = 0;
-        this.cashMachines = new int[0];
-        this.cashMachine2 = new CashMachine();
-    }
-
-    public int[] getCashMachines() {
-        return cashMachines;
+        this.cashMachines = new CashMachine[0];
     }
 
     public int getSize() {
         return size;
     }
 
-    public void addCashMachine(int cashMachine) {
+    public void addCashMachine(CashMachine cashMachine) {
         this.size++;
-        int[] newTab = new int[this.size];
+        CashMachine[] newTab = new CashMachine[this.size];
         System.arraycopy(cashMachines, 0, newTab, 0, cashMachines.length);
         newTab[this.size - 1] = cashMachine;
         this.cashMachines = newTab;
     }
 
-    public int[] getCashMachine() {
+    public CashMachine[] getCashMachines() {
         return cashMachines;
     }
 
@@ -38,7 +29,7 @@ public class Bank {
         int totalBalance = 0;
         int i;
         for (i = 0; i < this.cashMachines.length; i++) {
-            totalBalance += this.cashMachine2.getBalance();
+            totalBalance += this.cashMachines[i].getBalance();
         }
         return totalBalance;
 
@@ -46,70 +37,46 @@ public class Bank {
 
 
     public int getTotalPaycheck() {
-        int i;
         int totalPaycheck = 0;
-        for (i = 0; i < this.cashMachines.length; i++) {
-            int[] transaction2 = this.cashMachine2.getTransactions();
-            for (int j = 0; j < transaction2.length; i++) {
-                if (transaction2[j] < 0) {
-                    totalPaycheck += 1;
+        for (int i = 0; i < this.cashMachines.length; i++) {
+            int[] transactions = this.cashMachines[i].getTransactions();
+            for (int j = 0; j < transactions.length; i++) {
+                if (transactions[j] < 0) {
+                    totalPaycheck++;
                 }
             }
-
         }
-        int totalPaycheck1 = totalPaycheck;
-        return totalPaycheck1;
-
+        return totalPaycheck;
     }
 
     public int getTotalPayment() {
-        int i;
-        for (i = 0; i < this.cashMachines.length; i++) {
-            int[] transaction2 = this.cashMachine2.getTransactions();
-            for (int j = 0; j < transaction2.length; i++) {
-                int totalPayment  = 0;
-                if (transaction2[j] > 0) {
-                    totalPayment += 1;
+        int totalPayment = 0;
+        for (int i = 0; i < this.cashMachines.length; i++) {
+            int[] transactions = this.cashMachines[i].getTransactions();
+            for (int j = 0; j < transactions.length; i++) {
+                if (transactions[j] > 0) {
+                    totalPayment++;
                 }
-                return totalPayment;
             }
-
         }
-        return i;
+        return totalPayment;
     }
 
     public int getAvgPaycheck() {
         int totalSumPaycheck = 0;
-        int transactionQty =0;
+        int transactionQty = 0;
         for (int i = 0; i < this.cashMachines.length; i++) {
-            int[] transaction2 = this.cashMachine2.getTransactions();
-            for (int j = 0; j < transaction2.length; i++) {
-                if (transaction2[j] < 0) {
+            int[] transactions = this.cashMachines[i].getTransactions();
+            for (int j = 0; j < transactions.length; i++) {
+                if (transactions[j] < 0) {
                     transactionQty += 1;
-                    totalSumPaycheck += transaction2[j];
+                    totalSumPaycheck += transactions[j];
                 }
             }
         }
-        int avg = totalSumPaycheck/transactionQty;
+        // Dodaj sprawdzenie, czy transactionQty nie jest równe 0, aby uniknąć dzielenia przez zero
+        int avg = (transactionQty != 0) ? totalSumPaycheck / transactionQty : 0;
         return avg;
     }
 
-
-    public int getAvgPayment() {
-        int totalSumPayment = 0;
-        int transactionQty =0;
-        for (int i = 0; i < this.cashMachines.length; i++) {
-            int[] transaction2 = this.cashMachine2.getTransactions();
-            for (int j = 0; j < transaction2.length; i++) {
-                if (transaction2[j] > 0) {
-                    transactionQty += 1;
-                    totalSumPayment += transaction2[j];
-                }
-            }
-
-        }
-
-    int avg1 = totalSumPayment/transactionQty;
-            return avg1;
-    }
 }
