@@ -21,9 +21,7 @@ public class Bank {
         this.cashMachines = newTab;
     }
 
-    public CashMachine[] getCashMachines() {
-        return cashMachines;
-    }
+    public CashMachine[] getCashMachines() {return cashMachines;}
 
     public int getTotalBalance() {
         int totalBalance = 0;

@@ -1,10 +1,11 @@
 package com.kodilla.bank;
+
 import homework.bank.Bank;
 import homework.bank.CashMachine;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class BankTestSuite {
 
@@ -37,5 +38,24 @@ public class BankTestSuite {
             assertEquals(150, totalBalance);
         }
 
-        // Dodaj testy dla pozostałych metod
+    @Test
+    void testAddCashMachine() {
+        CashMachine cashMachine1 = new CashMachine();
+        bank.addCashMachine(cashMachine1);
+
+        assertEquals(1, bank.getSize());
+        CashMachine[] machinesArray1 = bank.getCashMachines();
+        assertNotNull(machinesArray1);
+        assertEquals(1, machinesArray1.length);
+        assertSame(cashMachine1, machinesArray1[0]);
+
+        CashMachine cashMachine2 = new CashMachine();
+        bank.addCashMachine(cashMachine2);
+
+        assertEquals(2, bank.getSize());
+        CashMachine[] machinesArray2 = bank.getCashMachines();
+        assertNotNull(machinesArray2);
+        assertEquals(2, machinesArray2.length);
+        assertSame(cashMachine2, machinesArray2[1]);
+    }
     }
