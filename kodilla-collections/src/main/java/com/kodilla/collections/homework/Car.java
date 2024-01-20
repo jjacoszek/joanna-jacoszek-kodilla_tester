@@ -21,7 +21,7 @@ class Car {
     }
 }
 
-class CarUtils {
+public class CarUtils {
     public static void describeCar(Car car) {
         System.out.println("Car brand: " + car.getBrand() + ", speed: " + car.getSpeed() + " km/h");
     }

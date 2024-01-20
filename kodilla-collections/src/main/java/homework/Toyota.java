@@ -23,4 +23,9 @@ public class Toyota implements Car{
         speed -= 5;
 
     }
+
+    @Override
+    public String getModel() {
+        return null;
+    }
 }

@@ -5,12 +5,14 @@ public class BMW implements Car{
     private int speed;
 
     public BMW(int speed){
+
         this.speed = speed;
     }
 
 
     @Override
     public int getSpeed() {
+
         return speed;
     }
 
@@ -25,5 +27,10 @@ public class BMW implements Car{
     public void decreaseSpeed() {
     speed -= 10;
 
+    }
+
+    @Override
+    public String getModel() {
+        return null;
     }
 }

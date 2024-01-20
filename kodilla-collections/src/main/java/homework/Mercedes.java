@@ -9,6 +9,7 @@ public class Mercedes implements Car {
     }
     @Override
     public int getSpeed() {
+
         return speed;
     }
 
@@ -22,5 +23,10 @@ public class Mercedes implements Car {
     public void decreaseSpeed() {
         speed -= 45;
 
+    }
+
+    @Override
+    public String getModel() {
+        return null;
     }
 }
