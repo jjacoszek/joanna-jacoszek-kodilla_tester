@@ -1,7 +1,5 @@
-package com.kodilla.collections.lists.homework;
+/*package com.kodilla.collections.lists.homework;
 
-
-import com.kodilla.collections.homework.CarUtils;
 import com.kodilla.inheritance.Car;
 import homework.BMW;
 import homework.Mercedes;
@@ -31,3 +29,4 @@ public class CarsListApplication {
         }
     }
 }
+*/

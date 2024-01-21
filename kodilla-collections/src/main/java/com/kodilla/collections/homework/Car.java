@@ -21,11 +21,11 @@ class Car {
     }
 }
 
-public class CarUtils {
-    public static void describeCar(Car car) {
-        System.out.println("Car brand: " + car.getBrand() + ", speed: " + car.getSpeed() + " km/h");
-    }
-}
+//public class CarUtils {
+  //  public static void describeCar(Car car) {
+    //    System.out.println("Car brand: " + car.getBrand() + ", speed: " + car.getSpeed() + " km/h");
+    //}
+//}
 
 class CarsApplication {
     public static Car drawCar() {
@@ -45,8 +45,7 @@ class CarsApplication {
             cars[i] = drawCar();
         }
 
-        for (Car car : cars) {
-            CarUtils.describeCar(car);
+        //for (Car car : cars) {
+          //  CarUtils.describeCar(car);
         }
     }
-}
