@@ -1,6 +1,5 @@
 plugins {
     id 'java'
-    id 'org.jetbrains.kotlin.jvm'
 }
 
 group = 'com.kodilla'
@@ -11,15 +10,10 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.jetbrains:annotations:24.0.0'
     testImplementation platform('org.junit:junit-bom:5.9.1')
     testImplementation 'org.junit.jupiter:junit-jupiter'
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
 }
 
 test {
     useJUnitPlatform()
-}
-kotlin {
-    jvmToolchain(17)
 }

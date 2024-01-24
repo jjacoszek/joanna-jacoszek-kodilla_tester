@@ -10,6 +10,7 @@ public class BMW implements Car{
     }
 
 
+
     @Override
     public int getSpeed() {
 
@@ -31,6 +32,7 @@ public class BMW implements Car{
 
     @Override
     public String getModel() {
-        return null;
+
+        return "BMW";
     }
 }

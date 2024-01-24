@@ -5,8 +5,11 @@ public class Mercedes implements Car {
     private int speed;
 
     public Mercedes(int speed){
+
         this.speed = speed;
     }
+
+
     @Override
     public int getSpeed() {
 
@@ -26,7 +29,14 @@ public class Mercedes implements Car {
     }
 
     @Override
+    public String toString() {
+        return "Mercedes{" +
+                "speed=" + speed +
+                '}';
+    }
+
+    @Override
     public String getModel() {
-        return null;
+        return "Mercedes";
     }
 }

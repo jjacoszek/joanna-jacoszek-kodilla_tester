@@ -5,10 +5,14 @@ public class Toyota implements Car{
     private int speed;
 
     public Toyota(int speed){
+
         this.speed = speed;
     }
+
+
     @Override
     public int getSpeed() {
+
         return speed;
     }
 
@@ -26,6 +30,6 @@ public class Toyota implements Car{
 
     @Override
     public String getModel() {
-        return null;
+        return "Toyota";
     }
 }
