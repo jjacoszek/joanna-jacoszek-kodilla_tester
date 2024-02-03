@@ -6,13 +6,14 @@ import java.util.Optional;
 
 public class OptionalExample {
     public static void main(String[] args) {
-        User user = new User("user 1", 30,100, "Test");
+        User user = new User("user 1", 30, 100, "Test");
 
-        Optional<User>optionalUser = Optional.ofNullable(user);
+        Optional<User> optionalUser = Optional.ofNullable(user);
 
 
         optionalUser.ifPresent(u -> System.out.println(u.getUsername()));
+
     }
-    }
+}
 
 

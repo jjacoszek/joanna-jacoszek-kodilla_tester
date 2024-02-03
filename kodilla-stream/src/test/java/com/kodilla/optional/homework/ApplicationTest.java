@@ -1,5 +1,5 @@
-package com.kodilla.optional.homework;
-
+import com.kodilla.optional.homework.Student;
+import com.kodilla.optional.homework.Teacher;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
