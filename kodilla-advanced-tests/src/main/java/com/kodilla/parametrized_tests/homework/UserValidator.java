@@ -16,4 +16,10 @@ public class UserValidator {
         }
         return false;
     }
+
+
+    public static void main(String[] args) {
+        UserValidator userValidator = new UserValidator();
+        System.out.println(userValidator.validateEmail("piatekaska@gmail.com"));
+    }
 }
