@@ -9,15 +9,7 @@ class PersonTestSuite {
     @ParameterizedTest
     @MethodSource(value = "com.kodilla.parametrized_tests.homework.StringPersonSource#provideStringsNormalBMI")
     public void testGetBMI(double heightInMeters, double weightInKilogram, String expectedCategory) {
-        Person person = new Person(1.60,57);
-        String actualCategory = person.getBMI();
-        assertEquals(expectedCategory, actualCategory);
-    }
-
-    @ParameterizedTest
-    @MethodSource(value = "com.kodilla.parametrized_tests.homework.StringPersonSource#provideStringsUnderweightBMI")
-    public void testGetBMI1(double heightInMeters, double weightInKilogram, String expectedCategory) {
-        Person person = new Person(2.10,73);
+        Person person = new Person(heightInMeters,weightInKilogram);
         String actualCategory = person.getBMI();
         assertEquals(expectedCategory, actualCategory);
     }
