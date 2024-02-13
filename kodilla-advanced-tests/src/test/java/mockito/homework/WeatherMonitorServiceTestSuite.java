@@ -78,9 +78,10 @@ class WeatherMonitorServiceTestSuite {
         weatherMonitorService.sendToGroupOFPeopleNotification(notification, targetGroup);
 
 
-        Mockito.verify(person1, times(1)).receive(notification);
-        Mockito.verify(person2, never()).receive(notification);
+        Mockito.verify(person1, times(1)).receive2(notification, targetGroup);
+        Mockito.verify(person2, never()).receive2(notification, targetGroup);
     }
+
     @Test
     public void OpportunitySendNotificationsToAll(){
         WeatherMonitorService weatherMonitorService = new WeatherMonitorService();
