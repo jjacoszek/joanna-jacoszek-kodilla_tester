@@ -18,7 +18,8 @@ public class WeatherMonitorService {
         for (Map.Entry<Person, Location> entry : registeredPeople.entrySet()) {
             Person person = entry.getKey();
             Location location = entry.getValue();
-            if (location.equals(notification.getLocation())) {
+            if (location.getLocationName().equals(notification.getLocation())) {
+                person.receive(notification);
             }
         }
     }
@@ -39,15 +40,6 @@ public class WeatherMonitorService {
         registeredPeople.entrySet().removeIf(entry -> entry.getKey().equals(person));
     }
 
-
-    public void sendToGroupOFPeopleNotification(Notification notification, Set<Person> targetGroup) {
-        for (Person person : registeredPeople.keySet()) {
-            Location personLocation = registeredPeople.get(person);
-            if (personLocation != null && personLocation.equals(notification.getLocation()) && targetGroup.contains(person)) {
-                person.receive(notification);
-            }
-        }
-    }
 
     public void sendToAllNotification(Notification notification) {
         for (Person person : registeredPeople.keySet()) {
