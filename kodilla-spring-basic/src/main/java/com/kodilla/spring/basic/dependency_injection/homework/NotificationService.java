@@ -1,7 +1,15 @@
 package com.kodilla.spring.basic.dependency_injection.homework;
 
-public interface NotificationService {
+import org.springframework.stereotype.Component;
 
-    void success(String address);
-    void fail(String address);
+@Component
+public class NotificationService {
+    public String success(String address) {
+        return "Package delivered to: " + address;
+    }
+
+    public String fail(String address) {
+        return "Package not delivered to: " + address;
+    }
+
 }

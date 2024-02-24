@@ -41,8 +41,3 @@ class CalculatorTestSuite {
         Assertions.assertEquals(2, result);
     }
 }
-
-
-
-
-
