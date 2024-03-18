@@ -6,8 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AllegroTestingApp {
 
@@ -19,12 +19,9 @@ public class AllegroTestingApp {
         driver.get("https://allegro.pl/");
 
 
-        Alert alert = driver.switchTo().alert();
+       Alert alert = driver.switchTo().alert();
         alert.accept();
 
-
-        WebElement confirmButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class='captcha_display_button_submit' and text()='potwierdzam']")));
-        confirmButton.click();
 
         WebElement searchField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@data-role='search-input']")));
         searchField.sendKeys("Mavic mini");
