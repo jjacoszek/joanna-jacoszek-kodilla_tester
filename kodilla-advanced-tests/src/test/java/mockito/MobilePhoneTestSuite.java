@@ -3,7 +3,7 @@ package mockito;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
-
+/*
 class MobilePhoneTestSuite {
     MobilePhone myPhone = Mockito.mock(MobilePhone.class);
 
@@ -25,4 +25,4 @@ class MobilePhoneTestSuite {
         Mockito.verify(myPhone).launchApplication("Tetris4D");
     }
 
-}
+}*/

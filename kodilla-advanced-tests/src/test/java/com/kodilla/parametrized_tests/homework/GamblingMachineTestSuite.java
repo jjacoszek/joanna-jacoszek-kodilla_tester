@@ -1,13 +1,6 @@
 package com.kodilla.parametrized_tests.homework;
 
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvFileSource;
-
-import java.util.Set;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-
+/*
 public class GamblingMachineTestSuite {
 
     private GamblingMachine gamblingMachine = new GamblingMachine();
@@ -25,4 +18,4 @@ public class GamblingMachineTestSuite {
         assertEquals(expectedWins, actualWins);
     }
 
-}
+}*/

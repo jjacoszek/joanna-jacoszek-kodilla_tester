@@ -1,11 +1,6 @@
 package com.kodilla.selenium.login;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-
+/*
 public class LoginTestingApp {
     public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver", "C:\\selenium-drivers\\Chrome\\chromedriver-win32\\chromedriver.exe");
@@ -20,3 +15,4 @@ public class LoginTestingApp {
         passwordField.sendKeys("kodilla123");
     }
 }
+*/

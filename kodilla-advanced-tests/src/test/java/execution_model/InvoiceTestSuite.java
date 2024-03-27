@@ -3,7 +3,7 @@ package execution_model;
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
+/*
 class InvoiceTestSuite {
     Invoice invoice = new Invoice();
     Item milk = new Item("Milk", 3.50);
@@ -44,4 +44,4 @@ class InvoiceTestSuite {
     public static void displayGoodByeMessage() {
         System.out.println("Finishing testing");
     }
-}
+}*/

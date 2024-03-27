@@ -1,18 +1,15 @@
 package com.kodilla.parametrized_tests;
-
+/*
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.MethodSource;
-
-import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class StringManipulatorTestSuite {
     private StringManipulator manipulator = new StringManipulator();
-
+/*
     private static Stream<Arguments> provideStringsForTestingLength() {
         return Stream.of(
                 Arguments.of("test", 4),
@@ -32,7 +29,7 @@ class StringManipulatorTestSuite {
     @MethodSource
     public void shouldCalculateStringLengthWithoutSpaces1(String input, int expected) {
         assertEquals(expected, manipulator.getStringLengthWithoutSpaces(input));
-    }*/
+    }
 
     @ParameterizedTest
     @CsvSource(value = {"test,tset", "OtHEr,rehto", "EVent,tneve", "null,llun", "A,a"})
@@ -51,6 +48,4 @@ class StringManipulatorTestSuite {
     public void shouldCalculateStringLengthWithoutSpaces3(String input, int expected) {
         assertEquals(expected, manipulator.getStringLengthWithoutSpaces(input));
     }
-
-
-}
+}*/

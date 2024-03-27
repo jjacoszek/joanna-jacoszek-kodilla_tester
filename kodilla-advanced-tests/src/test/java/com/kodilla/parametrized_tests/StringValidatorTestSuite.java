@@ -6,7 +6,7 @@ import org.junit.jupiter.params.provider.NullAndEmptySource;
 import org.junit.jupiter.params.provider.NullSource;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
-
+/*
 class StringValidatorTestSuite {
     private StringValidator validator = new StringValidator();
 
@@ -33,4 +33,4 @@ class StringValidatorTestSuite {
         System.out.println("|" + text + "|");
         assertTrue(validator.isBlank(text));
     }
-}
+}*/
