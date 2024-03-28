@@ -1,4 +1,4 @@
-/*import java.util.Arrays;
+import java.util.Arrays;
 
 public class Grades {
     private int[] grade;
@@ -30,7 +30,7 @@ public class Grades {
 
 
 
-/*Public static void main (String[]args){
+public static void main (String[]args){
             System.out.println("The values were added");
             Grades g1 = new Grades();
             System.out.println("Array Elements");
@@ -39,9 +39,9 @@ public class Grades {
                 System.out.println(grade);
 
             }
-        }*/
+        }
 
-   /* public int[] getGrade() {
+  public int[] getGrade() {
         return grade;
     }
 
@@ -94,4 +94,4 @@ class App {
     }
 }
 }
-*/
+

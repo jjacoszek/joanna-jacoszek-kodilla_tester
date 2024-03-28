@@ -1,6 +1,10 @@
 package school;
 
-/*
+
+import org.junit.jupiter.api.Test;
+
+import static junit.framework.TestCase.assertEquals;
+
 public class StudentTestSuite {
 
     @Test
@@ -77,4 +81,4 @@ public class StudentTestSuite {
 
     }
 
-*/
+
